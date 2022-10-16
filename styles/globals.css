@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/OggBold.woff2);
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/fonts/OggMedium.woff2);
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/OggRegular.woff2);
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/OggLight.woff2);
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Ogg';
+  font-style: italic;
+  font-weight: 600;
+  src: url(/fonts/OggMediumItalic.woff2);
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Ogg';
+  font-style: italic;
+  font-weight: 500;
+  src: url(/fonts/OggRegularItalic.woff2);
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Ogg';
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/OggLightItalic.woff2);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #F5F7F8
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+::selection {
+  background: #fad997; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fad997; /* Gecko Browsers */
+}

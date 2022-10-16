@@ -1,0 +1,19 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        main: "hsla(160, 100%, 50%, 1.0)",
+      },
+      fontFamily: {
+        main: ["Roboto", "serif"],
+      },
+    },
+    animation: {},
+  },
+  plugins: [],
+};
