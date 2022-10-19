@@ -5,13 +5,10 @@ import { Logo } from "./Logo";
 export const Header = () => {
   return (
     <header className="py-4 px-8 bg-main fixed top-0 z-50 w-full font-title tracking-wider">
-      <div className="flex justify-between items-center">
-        <div className="h-full w-[180px]">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="h-full w-[120px] mb-2 md:w-[180px] md:mb-0">
           <Logo />
         </div>
-        {/* <h1 className="text-[32px] tracking-tight text-text-mid transition-all duration-500 font-medium">
-          Bubble People
-        </h1> */}
         <div className="flex items-center text-lg">
           <Link href="/">
             <button className="mr-4 hover:text-white transition-all">
