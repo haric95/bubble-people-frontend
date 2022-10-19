@@ -19,7 +19,7 @@ export const ShopCard: React.FC<ShopCardProps> = ({ direction, item }) => {
       >
         <img
           src={item.attributes.images.data[0].attributes.url}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
         />
       </div>
       <div className="grow bg-black">
