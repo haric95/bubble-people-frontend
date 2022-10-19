@@ -2,12 +2,12 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Header } from "../components/Header";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Bubble People</title>
-        <meta name="description" content="Florence Sweeney" />
+        <meta name="description" content="Bubble People - About" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -23,4 +23,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;

@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: "default",
-    domains: ["localhost", "res.cloudinary.com"],
+    domains: ["localhost", "res.cloudinary.com", "img.youtube.com"],
   },
 };
 

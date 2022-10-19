@@ -90,8 +90,10 @@ h4 {
 }
 
 ::selection {
-  background: #fad997; /* WebKit/Blink Browsers */
+  background: #bceb21; /* WebKit/Blink Browsers */
+  color: black;
 }
 ::-moz-selection {
-  background: #fad997; /* Gecko Browsers */
+  background: #bceb21; /* Gecko Browsers */
+  color: black;
 }

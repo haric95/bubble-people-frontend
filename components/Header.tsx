@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className="py-4 px-8 bg-main fixed top-0 z-50 w-full font-title tracking-wider">
       <div className="flex justify-between items-center">
-        <div className="h-full w-[200px]">
+        <div className="h-full w-[180px]">
           <Logo />
         </div>
         {/* <h1 className="text-[32px] tracking-tight text-text-mid transition-all duration-500 font-medium">
