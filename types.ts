@@ -3,3 +3,5 @@ export type StrapiImage = {
     url: string;
   };
 };
+
+export type HTMLString = string;

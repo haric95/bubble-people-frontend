@@ -14,7 +14,10 @@
     "next": "12.3.1",
     "qs": "^6.11.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.6.0",
+    "react-player": "^2.11.0",
+    "swiper": "^8.4.4"
   },
   "devDependencies": {
     "@types/gl-react-dom": "^3.15.4",

@@ -38,7 +38,7 @@ const Shop = ({
         <div className="w-screen flex flex-col mt-[72px] p-8 absolute">
           {shopItems.map((item, index) => (
             <div className="flex">
-              <div className="mb-4 md:h-64 md:w-[60%] w-full">
+              <div className="mb-4 md:h-64 w-full">
                 <ShopCard
                   item={item}
                   direction={index % 2 === 0 ? "left" : "left"}

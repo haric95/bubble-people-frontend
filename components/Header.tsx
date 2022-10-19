@@ -7,7 +7,9 @@ export const Header = () => {
     <header className="py-4 px-8 bg-main fixed top-0 z-50 w-full font-title tracking-wider">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="h-full w-[120px] mb-2 md:w-[180px] md:mb-0">
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
         </div>
         <div className="flex items-center text-lg">
           <Link href="/">
@@ -23,11 +25,6 @@ export const Header = () => {
           <Link href="/shop">
             <button className="mr-4 hover:text-white transition-all">
               <p>Shop</p>
-            </button>
-          </Link>
-          <Link href="/about">
-            <button className="mr-4 hover:text-white transition-all">
-              <p>About</p>
             </button>
           </Link>
         </div>
