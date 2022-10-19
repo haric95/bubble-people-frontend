@@ -10,11 +10,11 @@ export const ShopCard: React.FC<ShopCardProps> = ({ direction, item }) => {
     <div
       className={`w-full h-full border-2 border-white bg-black text-white flex opacity-[85%] hover:opacity-100 transition-all ${
         direction === "right" && "flex-row-reverse"
-      }`}
+      } flex-col md:flex-row`}
     >
       <div
-        className={`h-full w-64 bg-black relative shrink-0 ${
-          direction === "left" ? "border-r-4" : "border-l-4"
+        className={`h-64 w-full md:w-64 md:h-full bg-black relative shrink-0 ${
+          direction === "left" ? "md:border-r-4" : "md:border-l-4"
         } content-box border-main`}
       >
         <Image
@@ -29,7 +29,7 @@ export const ShopCard: React.FC<ShopCardProps> = ({ direction, item }) => {
             direction === "left" ? "items-end text-right" : "items-start"
           }`}
         >
-          <div>
+          <div className="mb-2 md:mb-0">
             <h4 className="font-title font-weight-500 tracking-wider mb-4">
               {item.attributes.title}
             </h4>
