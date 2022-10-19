@@ -73,6 +73,22 @@ a {
 @media (prefers-color-scheme: dark) {
 }
 
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
 ::selection {
   background: #fad997; /* WebKit/Blink Browsers */
 }

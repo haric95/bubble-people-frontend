@@ -7,10 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "hsla(160, 100%, 50%, 1.0)",
+        main: "#35beb2",
+        button: "#bceb21",
+        buttondark: "#aad422",
       },
       fontFamily: {
-        main: ["Roboto", "serif"],
+        title: ["Big Shoulders Text", "sans-serif"],
+        main: ["Rajdhani", "sans-serif"],
+        bubble: ["Rubik Bubbles", "sans-serif"],
+        dirt: ["Rubik Dirt", "sans-serif"],
       },
     },
     animation: {},

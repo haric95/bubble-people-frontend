@@ -6,7 +6,6 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Bubble People</title>
         <meta name="description" content="Florence Sweeney" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
