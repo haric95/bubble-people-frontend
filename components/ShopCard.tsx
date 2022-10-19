@@ -17,10 +17,9 @@ export const ShopCard: React.FC<ShopCardProps> = ({ direction, item }) => {
           direction === "left" ? "md:border-r-4" : "md:border-l-4"
         } content-box border-main`}
       >
-        <Image
+        <img
           src={item.attributes.images.data[0].attributes.url}
-          layout="fill"
-          objectFit="cover"
+          className="w-full h-full object-contain"
         />
       </div>
       <div className="grow bg-black">
