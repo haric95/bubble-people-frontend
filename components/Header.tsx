@@ -13,17 +13,17 @@ export const Header = () => {
         </div>
         <div className="flex items-center text-lg">
           <Link href="/">
-            <button className="mr-4 hover:text-white transition-all">
+            <button className="mr-4 hover:text-white transition-all text-[24px]">
               <p>Home</p>
             </button>
           </Link>
           <Link href="/media">
-            <button className="mr-4 hover:text-white transition-all">
+            <button className="mr-4 hover:text-white transition-all text-[24px]">
               <p>Media</p>
             </button>
           </Link>
           <Link href="/shop">
-            <button className="mr-4 hover:text-white transition-all">
+            <button className="mr-4 hover:text-white transition-all text-[24px]">
               <p>Shop</p>
             </button>
           </Link>

@@ -5,6 +5,7 @@ export const Logo = () => {
     <svg
       viewBox="31.595 39.41 1019.388 213.867"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ filter: "drop-shadow(3px 3px 0.1px rgb(0 0 0 / 0.2))" }}
     >
       <defs>
         <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">

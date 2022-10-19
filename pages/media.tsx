@@ -88,6 +88,12 @@ const Media = ({
                   onDuration={(duration) => setDuration(duration)}
                   onEnded={() => {
                     setSeekTime(0);
+                    if (playIndex + 1 < audioItems.length) {
+                      setPlayIndex((old) => old + 1);
+                    } else {
+                      setPlayIndex(0);
+                      setIsPlaying(false);
+                    }
                   }}
                 />
                 <div className="w-full h-fit md:w-[640px] md:h-[130px]">
@@ -108,15 +114,6 @@ const Media = ({
                           objectFit="cover"
                         />
                       )}
-                      <div
-                        className={`relative ${
-                          audioItems[playIndex].attributes.Cover.data
-                            ? "blend-mode-invert"
-                            : ""
-                        }`}
-                      >
-                        {isPlaying ? <IoMdPause /> : <IoMdPlay />}
-                      </div>
                     </Button>
                     <div className="flex flex-col justify-between h-full md:ml-2 w-full">
                       <p className="text-xl">
