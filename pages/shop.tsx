@@ -32,7 +32,7 @@ const Shop = ({
       <main className="bg-black relative">
         <Header />
         <div className="fixed w-screen h-screen top-0 left-0 bg-black">
-          <GLSLCanvas containerClass="h-full w-full fixed" />
+          {/* <GLSLCanvas containerClass="h-full w-full fixed" /> */}
           {/* <GLSLCanvas containerClass="w-full h-[300px]" /> */}
         </div>
         <div className="w-screen flex flex-col mt-[72px] p-8 absolute">
