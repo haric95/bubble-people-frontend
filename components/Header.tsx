@@ -27,7 +27,7 @@ export const Header = () => {
           <Link href="/media">
             <button
               className={`mr-4 hover:text-white transition-all text-[24px] ${
-                router.asPath === "/" ? "text-white" : ""
+                router.asPath === "/media" ? "text-white" : ""
               }`}
             >
               Media
@@ -36,7 +36,7 @@ export const Header = () => {
           <Link href="/shop">
             <button
               className={`mr-4 hover:text-white transition-all text-[24px] ${
-                router.asPath === "/" ? "text-white" : ""
+                router.asPath === "/shop" ? "text-white" : ""
               }`}
             >
               Shop
