@@ -97,3 +97,24 @@ h4 {
   background: #bceb21; /* Gecko Browsers */
   color: black;
 }
+
+.text-glow-heading {
+  text-shadow: 0 0 20px #49c2f1;
+}
+
+.text-glow-button {
+  color: #def6ff;
+  text-shadow: 0 0 0px #def6ff;
+  transition: text-shadow 0.5s ease;
+}
+
+.text-glow-button:hover {
+  text-shadow: 0 0 8px #def6ff;
+}
+
+.noise-bg {
+  background:
+    linear-gradient(to right, transparent, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  opacity: 0.5;
+}

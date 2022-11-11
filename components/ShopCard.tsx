@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ShopItem } from "../pages/shop";
+import { ShopItem } from "../pages/store";
 import { Button } from "./Button";
 
 type ShopCardProps = { item: ShopItem; direction: "left" | "right" };

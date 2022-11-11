@@ -13,7 +13,10 @@ const About: NextPage = () => {
 
       <main className="h-screen relative">
         <Header />
-        <div className="h-full p-8 flex flex-col bg-background absolute">
+        <div
+          className="h-full p-8 flex flex-col bg-background absolute"
+          style={{ minHeight: "calc(100vh - 70px)" }}
+        >
           <h1 className="text-[48px] tracking-tight text-text-mid transition-all duration-500 mb-8 font-medium">
             Bubble People
           </h1>

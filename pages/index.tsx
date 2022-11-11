@@ -43,7 +43,7 @@ const Home = ({
       <main className="h-screen relative">
         <Header />
         <div className="fixed w-screen h-screen top-0 left-0 bg-white"></div>
-        <div className="w-screen flex flex-col mt-[72px] p-8 absolute">
+        <div className="w-screen flex flex-col mt-[70px] p-8 absolute">
           <div className="w-full md:h-screen">
             <Swiper
               // install Swiper modules
