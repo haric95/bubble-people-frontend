@@ -51,7 +51,6 @@ const About = ({ content }: InferGetStaticPropsType<typeof getStaticProps>) => {
               >
                 {content.data.attributes.images.data.map((image, index) => (
                   <SwiperSlide className="">
-                    <p className="text-white">image {index}</p>
                     <Image
                       src={image.attributes.url}
                       layout="fill"
