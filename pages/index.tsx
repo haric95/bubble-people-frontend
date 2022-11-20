@@ -3,12 +3,18 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import Image from "next/image";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaBandcamp } from "react-icons/fa";
+import { ImSoundcloud } from "react-icons/im";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { HTMLString, StrapiImage } from "../types";
 import { fetchAPI } from "../lib/api";
+import { getStrapiMedia } from "../lib/media";
+import Link from "next/link";
 
 type ImagesResponse = {
   data: {
@@ -32,7 +38,6 @@ const Home = ({
   images,
   content,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log(images);
   return (
     <div>
       <Head>
@@ -42,10 +47,21 @@ const Home = ({
 
       <main className="h-screen relative">
         <Header />
-        <div className="fixed w-screen h-screen top-0 left-0 bg-white"></div>
-        <div className="w-screen flex flex-col mt-[70px] p-8 absolute">
-          <div className="w-full md:h-screen">
-            <Swiper
+        <div
+          className="w-screen flex flex-col items-center mt-[70px] absolute bg-bg-blue"
+          style={{ minHeight: "calc(100vh - 70px)" }}
+        >
+          <div className="w-full h-auto object-fill mt-64 md:mt-0">
+            <img
+              src={getStrapiMedia({
+                data: {
+                  attributes:
+                    images.data.attributes.HomepageImages.data[0].attributes,
+                },
+              })}
+              className="w-full"
+            />
+            {/* <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, A11y]}
               spaceBetween={50}
@@ -57,13 +73,38 @@ const Home = ({
               onSlideChange={() => console.log("slide change")}
               className="h-full w-full"
             >
-              {/* {images.map((image) => (
+              {images.data.attributes.HomepageImages.data.map((image) => (
                 <SwiperSlide>Slide 1</SwiperSlide>
-              ))} */}
-            </Swiper>
+              ))}
+            </Swiper> */}
+            <div className="fixed bottom-0 w-full left-0 p-8 flex justify-center">
+              <button className="w-8 h-8 mr-4">
+                <a
+                  href={"https://www.instagram.com/jasper_drifts/"}
+                  target="_blank"
+                >
+                  <AiOutlineInstagram color="white" className="w-full h-full" />
+                </a>
+              </button>
+              <button className="w-8 h-8 mr-4">
+                <a
+                  href={"https://bubblepeople.bandcamp.com/music"}
+                  target="_blank"
+                >
+                  <FaBandcamp color="white" className="w-full h-full" />
+                </a>
+              </button>
+              <button className="w-8 h-8 mr-4">
+                <a
+                  href="https://soundcloud.com/bubblepeopleofficial"
+                  target="_blank"
+                >
+                  <ImSoundcloud color="white" className="w-full h-full" />
+                </a>
+              </button>
+            </div>
           </div>
         </div>
-        <div className="h-full p-8 flex flex-col bg-background absolute"></div>
       </main>
     </div>
   );

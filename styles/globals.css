@@ -118,3 +118,19 @@ h4 {
     url(https://grainy-gradients.vercel.app/noise.svg);
   opacity: 0.5;
 }
+
+.about-page .swiper-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.about-page .swiper-pagination-bullet {
+  background-color: #bceb21;
+  mix-blend-mode: difference;
+  opacity: 0.4;
+}
+.about-page .swiper-pagination-bullet-active {
+  background-color: #aad422;
+  mix-blend-mode: difference;
+  opacity: 1;
+}
