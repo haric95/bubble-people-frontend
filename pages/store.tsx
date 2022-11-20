@@ -10,6 +10,7 @@ import { Button } from "../components/Button";
 import { utimesSync } from "fs";
 import { ShopCard } from "../components/ShopCard";
 import { GLSLCanvas } from "../components/GLSLCanvas";
+import { Footer } from "../components/Footer";
 
 export type ShopItem = {
   attributes: {
@@ -32,7 +33,7 @@ const Shop = ({
       <main className="relative">
         <Header />
         <div
-          className="w-screen bg-bg-blue flex flex-col mt-[70px] p-8 absolute"
+          className="w-screen bg-bg-blue flex flex-col mt-[70px] p-8 absolute pb-16 md:pb-0"
           style={{ minHeight: "calc(100vh - 70px)" }}
         >
           {shopItems.map((item, index) => (
@@ -46,6 +47,7 @@ const Shop = ({
             </div>
           ))}
         </div>
+        <Footer />
       </main>
     </div>
   );

@@ -14,6 +14,7 @@ import {
 } from "react-icons/io";
 import { Button } from "../components/Button";
 import { StrapiImage } from "../types";
+import { Footer } from "../components/Footer";
 
 declare global {
   interface Window {
@@ -188,7 +189,7 @@ const Media = ({
               </div>
             </div>
           </div>
-          <div>
+          <div className="mb-16">
             <h1 className="font-title text-glow-heading text-main-glow mb-4">
               video
             </h1>
@@ -215,6 +216,7 @@ const Media = ({
               ))}
             </div>
           </div>
+          <Footer />
         </div>
       </main>
     </div>

@@ -15,6 +15,7 @@ import { HTMLString, StrapiImage } from "../types";
 import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from "../lib/media";
 import Link from "next/link";
+import { Footer } from "../components/Footer";
 
 type ImagesResponse = {
   data: {
@@ -61,48 +62,7 @@ const Home = ({
               })}
               className="w-full"
             />
-            {/* <Swiper
-              // install Swiper modules
-              modules={[Navigation, Pagination, A11y]}
-              spaceBetween={50}
-              slidesPerView={3}
-              navigation
-              pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-              className="h-full w-full"
-            >
-              {images.data.attributes.HomepageImages.data.map((image) => (
-                <SwiperSlide>Slide 1</SwiperSlide>
-              ))}
-            </Swiper> */}
-            <div className="fixed bottom-0 w-full left-0 p-8 flex justify-center">
-              <button className="w-8 h-8 mr-4">
-                <a
-                  href={"https://www.instagram.com/jasper_drifts/"}
-                  target="_blank"
-                >
-                  <AiOutlineInstagram color="white" className="w-full h-full" />
-                </a>
-              </button>
-              <button className="w-8 h-8 mr-4">
-                <a
-                  href={"https://bubblepeople.bandcamp.com/music"}
-                  target="_blank"
-                >
-                  <FaBandcamp color="white" className="w-full h-full" />
-                </a>
-              </button>
-              <button className="w-8 h-8 mr-4">
-                <a
-                  href="https://soundcloud.com/bubblepeopleofficial"
-                  target="_blank"
-                >
-                  <ImSoundcloud color="white" className="w-full h-full" />
-                </a>
-              </button>
-            </div>
+            <Footer />
           </div>
         </div>
       </main>

@@ -12,6 +12,7 @@ import { StrapiImage } from "../types";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Footer } from "../components/Footer";
 
 type AboutPageContent = {
   data: {
@@ -76,6 +77,7 @@ const About = ({ content }: InferGetStaticPropsType<typeof getStaticProps>) => {
             </div>
           </div>
         </div>
+        <Footer />
       </main>
     </div>
   );
