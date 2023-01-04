@@ -35,10 +35,7 @@ type ContentResponse = {
   };
 };
 
-const Home = ({
-  images,
-  content,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home = ({ images }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div>
       <Head>
@@ -72,18 +69,15 @@ const Home = ({
 
 export const getStaticProps: GetStaticProps<{
   images: ImagesResponse;
-  content: ContentResponse;
 }> = async () => {
   // Run API calls in parallel
-  const [imageRes, contentRes] = await Promise.all([
+  const [imageRes] = await Promise.all([
     fetchAPI("/homepage-image", { populate: "*" }),
-    fetchAPI("/homepage-markup", { populate: "*" }),
   ]);
 
   return {
     props: {
       images: imageRes,
-      content: contentRes,
     },
     revalidate: 1,
   };

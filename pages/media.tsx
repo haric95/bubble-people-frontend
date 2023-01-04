@@ -233,10 +233,16 @@ export const getStaticProps: GetStaticProps<{
     fetchAPI("/media-audio-items", { populate: "*" }),
   ]);
 
+  console.log({ blahhhh: JSON.stringify(audioItemsRes) });
+
+  const sortedAudioItems = (audioItemsRes.data as MediaAudioItem[]).sort(
+    (a, b) => a.attributes.Index - b.attributes.Index
+  );
+
   return {
     props: {
       videoItems: videoItemsRes.data as MediaVideoItem[],
-      audioItems: audioItemsRes.data as MediaAudioItem[],
+      audioItems: sortedAudioItems,
     },
     revalidate: 1,
   };
